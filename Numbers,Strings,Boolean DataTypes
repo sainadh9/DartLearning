@@ -1,0 +1,25 @@
+void main(){
+  //Numbers:int
+  int score=23;
+  var count=23;//It is inferred as integer automatically by the compiler
+  int hexValue=0xEADEBAEE;
+  
+  //Numbers:double
+  double percent=54.3;
+  var percentage=54.3333;//It is inferred as integer automatically by the compiler
+  double exponents=1.42e5;
+  
+  //Strings
+  String name="Henry";
+  
+  //Boolean
+  bool isValid=true;
+  var isAlive=false;//It is inferred as integer automatically by the compiler
+  
+  print(hexValue);
+  print(exponents);
+  
+  
+  //All datatypes in dart are objects
+  //Therefore their intial value is by default 'null'
+}
