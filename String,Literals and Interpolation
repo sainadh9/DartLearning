@@ -1,0 +1,32 @@
+void main(){
+  //Literals
+  
+ var isCool=true;
+  int x=2;
+  "john";
+  4.5;
+  //various ways to define string literals in dart
+  String s1='single';
+  String s2="double";
+  String s3='It\'s easy';
+  String s4="It's easy";
+  String s5 = 'This is going to be very long string.'
+    'This is going to be very long string.This is going to be very long string.';
+  //String interpolation: use ["My name is $name"] instead of "My name is "+ name
+  String name="kevin";
+  String message="My name is "+name;
+    String message1="My name is $name";//or
+  print('My name is $name');
+  print(message1);
+  
+  print('The no of charcters in kevin is'+ name.length.toString());
+  //In dart
+    print('The no of charcters in kevin is ${name.length}');
+  
+  
+  int l=20;
+  int b=30;
+  print('the sum of area is ${l+b}');
+  print('the sum of $l and $b is ${l + b }');
+
+}
