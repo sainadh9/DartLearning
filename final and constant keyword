@@ -1,0 +1,19 @@
+ void main(){
+  //final keyword
+  
+  final cityName="Hyd"; //or final String c
+ // cityName="Punjab";(throws error)
+
+final String countryName="India";
+  
+  //const keyword
+const PI=3.14;//or
+const double PI=3.14;
+}
+
+
+class Circle{
+  final color="Red";
+ // const PI=3.14;(gives error u need to use static before const in classlevel)
+  static const PI1=3.14;
+}
