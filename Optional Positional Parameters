@@ -1,0 +1,25 @@
+//1.Required parameters
+//2.Optional positional parameters
+void main(){
+  printCities("Newyork","NewDelhi","Sydney");
+    printCitiess("Newyork");
+
+}
+
+void printCities(String name1,String name2,String name3){
+  print("Name1 is $name1");
+    print("Name2 is $name2");
+    print("Name3 is $name3");
+
+
+}
+
+//optional parameters
+
+void printCitiess(String name1,[String name2,String name3]){
+  print("Name1 is $name1");
+    print("Name2 is $name2");
+    print("Name3 is $name3");
+
+
+}
