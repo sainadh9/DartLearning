@@ -1,0 +1,40 @@
+//define a function
+//pass paramters to a function
+//return value from a function
+//test that by default a function returns null
+
+
+
+//OBJECTIVE:Expression in function:SHORT HAND SYNTAX
+void main(){
+  findPerimeter(4,2);
+    findPerimeters(4,2);
+
+  int rectArea=getArea(10,5);
+  print("The area is $rectArea");
+  print(getAreas(10,2));
+  
+
+}
+
+
+void findPerimeter(int length,int breadth){
+
+  print("The perimeter is ${2*(length+breadth)}");
+}
+//or
+
+void findPerimeters(int length,int breadth) =>
+
+  print("The perimeter is ${2*(length+breadth)}");
+
+
+
+int getArea(int length,int breadth)=>   length*breadth;
+
+
+
+
+int getAreas(int length,int breadth){
+  int area=length*breadth;
+}
