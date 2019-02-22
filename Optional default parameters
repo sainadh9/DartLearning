@@ -1,0 +1,24 @@
+
+//2.Optional default parameters
+void main(){
+findVolume(10);
+  print("");
+  findVolume(10,breadth:5,height:30);
+  print("");
+  findVolume(10,height:30,breadth:5);
+
+}
+
+int findVolume(int length,{int breadth=2,int height=20}){
+  print("length is $length");
+    print("breadth is $breadth");
+    print("height is $height");
+  
+  print("Volume is ${length*breadth*height}");
+
+
+  
+}
+
+
+
