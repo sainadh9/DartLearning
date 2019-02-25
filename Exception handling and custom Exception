@@ -1,0 +1,80 @@
+ //1.ON Clause
+//2.Catch Clause with Exception Object
+//3.Catch Clause with Exception Object and StackTrace Object
+//4.Finally Clause
+//5.Create our own custom exception
+void main(){
+    print("CASE 2");
+    //wHEN YOU don't  KNOW THE EXCEPTION SHOULD BE THROWN , USE catch CLAUSE
+
+    try{
+    int result = 12 ~/ 0;
+    print("the result is $result");
+  } catch(e) {
+    print("The exception is $e");
+  }
+  
+  
+      print("CASE 3");
+    //Using stack trace to know the events occured before exception was thrown 
+
+    try{
+    int result = 12 ~/ 0;
+    print("the result is $result");
+  } catch(e, s) {
+    print("The exception is $e");
+      print("stack trace \n $s");
+  }
+  
+  
+   print("CASE 4");
+    //whether there is an exception or not ,finally clause is always executed
+
+    try{
+    int result = 12 ~/ 3;
+    print("the result is $result");
+  } catch(e) {
+    print("The exception is $e");
+  }finally{
+      print("This is finally clause is always executed");
+    }
+    print("CASE 5");
+  //Custom Exception
+  try{
+    depositMoney(-200);
+  }catch(e){
+    print(e.errorMessage());
+  }
+    
+  
+  
+  
+  
+  
+  print("CASE 1");
+  //wHEN YOU KNOW THE EXCEPTION SHOULD BE THROWN , USE ON CLAUSE
+  try{
+    int result = 12 ~/ 0;
+    print("the result is $result");
+  } on IntegerDivisionByZeroException {
+    print("cannot divide by zero");
+    
+  }
+
+}
+
+
+class DepositException implements Exception{
+  String errorMessage(){
+    return "you can't enter amount less than 0";
+  }
+}
+
+void depositMoney(int amount){
+  if(amount<0){
+    throw new DepositException();
+  }
+}
+
+
+
