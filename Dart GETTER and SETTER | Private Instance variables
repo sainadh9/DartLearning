@@ -1,0 +1,27 @@
+//default getter and setter
+//custom getter and setter
+//private instance variable
+
+void main(){
+  var student=Student();
+  student.name="Peter";//calling default setter to set value
+  print(student.name);//calling default setter to get value
+  student.percentage=438.0;//calling custom setter to set value
+  print(student.percentage);//calling custom getter to get value
+
+}
+
+class Student{
+  String name;//Instance variable
+  
+  //double percent;
+    double _percent;//private instance variable for its own library
+
+  //Instance variable with custom setter
+  void  set percentage(double marksSecured)=>_percent=(marksSecured/500)*100;
+    
+  
+  //Instance variable with custom getter
+  double get percentage=> _percent;
+  
+}
